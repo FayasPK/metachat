@@ -17,6 +17,9 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Serve static files from the client directory
+app.use(express.static(path.join(__dirname, "../client")));
+
 // Routes
 app.use("/auth", authRoutes);
 app.use("/chat", chatRoutes);
