@@ -1,0 +1,21 @@
+<!-- client/register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="auth-container">
+        <h2>Register</h2>
+        <input type="text" id="register-username" placeholder="Username" required />
+        <input type="password" id="register-password" placeholder="Password" required />
+        <button onclick="register()">Register</button>
+        <p>Already have an account? <a href="/chat/login">Login here</a></p>
+        <p><a href="/">Back to Homepage</a></p> <!-- Link to homepage -->
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
